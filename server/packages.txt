@@ -1,0 +1,9 @@
+pip3 install jinja2
+pip3 install aiofiles 
+pip3 install pymongo
+pip install python-dotenv
+fastapi
+uvicorn
+starlette
+
+pip install --upgrade pip && pip install jinja2 && pip install aiofiles && pip install pymongo && pip install python-dotenv && pip install fastapi && pip install uvicorn && pip install starlette && pip install requests
