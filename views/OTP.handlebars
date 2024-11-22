@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kang</title>
+    <style>
+        /* roboto */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            padding: 15px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #7978FF;
+            font-weight: bold;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .main-container {
+            padding: 30px 30px;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        .title-container {
+            position: relative;
+            height: 70px;
+            width: 100%;
+            background-color: blue;
+            opacity: 0.5;
+            border-radius: 10px;
+        }
+
+        .title {
+            padding: 5px;
+            color: #FEFBF3;
+            text-align: center;
+            align-self: center;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+        }
+
+        .content-container {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .content-title{
+            font-size: x-large;
+            color: #FFA62B;
+        }
+
+        .content-description {
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .description-msg {
+            color: #515070;
+            font-size: large;
+        }
+
+        .otp-container {
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+            color: #3E6D9C;
+            margin: 0 auto;
+            padding: 10px
+        }
+
+        .user-details {
+            margin-top: 10px;
+        }
+
+        .user-details p {
+            color: #628E90;
+            margin: 2px 0;
+        }
+
+        .image-container {
+            padding: 10px;
+            opacity: 0.8;
+        }
+
+        .image-container img {
+            width: 150px;
+            display: block;
+            margin: auto;
+            border-radius: 8px;
+        }
+
+        .visit-container {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .visit {
+            min-width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="title-container">
+            <h1 class="title">Kang</h1>
+        </div>
+        <div class="content-container">
+            <div class="content-title">Verify Your Account</div>
+            <div class="content-description">
+                <div class="description-msg">
+                    Verify  And Activate Your Account With OTP Authentication
+                </div>
+                <div class="otp-container">OTP : {{otp}}</div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://signalserver-i68m.onrender.com/logo.png"
+                alt="kang Logo">
+        </div>
+        <div class="visit-container">
+            <div class="visit"><a href="tel:8073149346" class="link">Phone</a></div>
+            <div class="visit"><a href="mailto:pavangowda80731@gmail.com" class="link">Email</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
