@@ -22,9 +22,11 @@ app.get('/',(req,res)=>{
 //routes management
 const authRoute = require("./routes/auth")
 const userRoute = require("./routes/user")
+const mapRoute = require("./routes/mapRoute")
 const {VerifyJWT}=require('./controllers/VerifyJWT')
 
 app.use("/auth", authRoute);
+app.use("/map", mapRoute);
 app.use("/user",VerifyJWT, userRoute);
 
 app.listen(port,()=>{
