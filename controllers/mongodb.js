@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 const remoteURL=process.env.MONGODB_URL_ATLAS
-const localurl=process.env.MONGODB_URL
+const localurl="mongodb://localhost:22501/?directConnection=true&retrywrites=false"
 const conn =async () => {
     try{
     const db=await mongoose.connect(localurl);
