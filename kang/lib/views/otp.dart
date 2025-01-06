@@ -95,7 +95,7 @@ class _OtpPageState extends State<OtpPage> {
           await storage.write(key: 'phone', value: response['credentials']['phone']);
 
           // Navigate to HomePage after successful OTP verification
-          context.router.replace(HomeRoute()); // Navigate to HomeRoute using AutoRoute
+          context.router.replace(MyAppRoute()); // Navigate to HomeRoute using AutoRoute
         } else {
           // Show error if OTP verification failed
           ScaffoldMessenger.of(context).showSnackBar(
